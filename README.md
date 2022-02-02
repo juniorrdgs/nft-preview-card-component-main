@@ -15,7 +15,7 @@ Esta é uma resolução para o [NFT preview card component challenge on Frontend
 Projeto desenvolvido para treino e auxílio no desenvolvimento das habilidades com HTML e CSS.
 
 ### Links
-- Endereço da Solução: [Respositório em meu GitHub](https://github.com/juniorrdgs/qr-code-component-main)
+- Endereço da Solução: [Respositório em meu GitHub](https://github.com/juniorrdgs/nft-preview-card-component-main)
 
 ### Desenvolvido com
 - HTML5
