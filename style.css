@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
+
+:root {
+    --textCL: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --lineCL: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+
+body {
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    background: var(--mainBG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 360px;
+    background: var(--cardBG);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card .image {
+    border-radius: 20px;
+    height: 300px;
+}
+
+.card .image img {
+    width: 100%;
+    height: 300px;
+    background-image: url('images/image-equilibrium.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.card .image img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.card .image:hover {
+    background-color: var(--cyan);
+    background-image: url('images/icon-view.svg');
+    background-position: center;
+    background-size: 70px;
+    background-repeat: no-repeat;
+}
+
+.card .title {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.card .title:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.card .descrip {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--textCL);
+    margin: 20px 0;
+}
+
+.card .currency-info {
+    font-size: 15px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--lineCL);
+    margin-top: 30px;
+}
+
+.currency-info .values {
+    flex: 1;
+    color: var(--cyan);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.currency-info .values .cristal {
+    width: 10px;
+    height: 15px;
+    margin: 0 10px 0 0;
+}
+
+.currency-info .days {
+    flex: 1;
+    color: var(--textCL);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.currency-info .clock {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.card .creator {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: var(--textCL);
+    margin-top: 10px;
+}
+
+.creator .avatar {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.creator span {
+    margin: 0 10px;
+}
+
+.creator span a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.creator span a:hover {
+    color: var(--cyan);
+}

@@ -3,30 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | NFT preview card component</title>
-
-  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  
-
   <div class="card">
-    <img src="images/image-equilibrium.jpg" alt="">
-    <h1>Equilibrium #3429</h1>
+    <div class="image">
+      <img src="images/image-equilibrium.jpg" alt="">
+    </div>
+    <p class="title">Equilibrium #3429</p>
 
-    <p>Our Equilibrium collection promotes balance and calm.</p>
+    <p class="descrip">Our Equilibrium collection promotes balance and calm.</p>
 
-    <div class="values">
-      <img src="images/icon-ethereum.svg" alt=""><span>0.041 ETH</span>
-      <span>3 days left</span>
+    <div class="currency-info">
+      <div class="values">
+        <img class="cristal" src="images/icon-ethereum.svg" alt="">
+        <span>0.041 ETH</span>
+      </div>
+      <div class="days">
+        <img class="clock" src="images/icon-clock.svg" alt="">
+        <span>3 days left</span>
+      </div>
     </div>
     <div class="creator">
-      <span>Creation of Jules Wyvern</span>
-</div>
+      <img class="avatar" src="images/image-avatar.png" alt="">
+      <span>Creation of <a href="#">Jules Wyvern</a></span>
+    </div>
   </div>
 </body>
 </html>
